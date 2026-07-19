@@ -50,7 +50,7 @@
                 <p><strong>Name:</strong> Untul Mubeen</p>
                 <p><strong>Email:</strong> <a href="mailto:untulmubeen192@gmail.com">untulmubeen192@gmail.com</a></p>
                 <p><strong>Insta:</strong> @itsmeuntulmubeen</p>
-                <p><strong>Phone:</strong> 03183826803</p>
+                <p><strong>Phone:</strong> 03052949721</p>
             </div>
         </div>
     </section>
@@ -303,7 +303,8 @@
                 <a href="mailto:untulmubeen192@gmail.com">untulmubeen192@gmail.com</a>
                 <a href="https://github.com" target="_blank">github.com</a>
                 <a href="https://instagram.com/itsmeuntulmubeen" target="_blank">@itsmeuntulmubeen</a>
-                <a href="tel:+03052949721">03052949721</a>
+                <a href="tel:03052949721">03052949721</a>
+                <a href="https://wa.me/923052949721" target="_blank">WhatsApp</a>
             </div>
 
             <p class="thank-you">
@@ -312,27 +313,27 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-
     <!-- Chatbot Widget HTML -->
-<div id="chatbot-toggle" onclick="toggleChat()">
-    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-        <path d="M12 2C6.48 2 2 6.48 2 12C2 15.38 3.69 18.37 6.25 20.15L5 22L7.5 21.13C8.9 21.69 10.42 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16 13.5C14.5 13.5 12.5 11.5 12.5 10C12.5 8.5 14.5 6.5 16 6.5C17.5 6.5 19.5 8.5 19.5 10C19.5 11.5 17.5 13.5 16 13.5Z"/>
-    </svg>
-</div>
+    <div id="chatbot-toggle" onclick="toggleChat()">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 15.38 3.69 18.37 6.25 20.15L5 22L7.5 21.13C8.9 21.69 10.42 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16 13.5C14.5 13.5 12.5 11.5 12.5 10C12.5 8.5 14.5 6.5 16 6.5C17.5 6.5 19.5 8.5 19.5 10C19.5 11.5 17.5 13.5 16 13.5Z"/>
+        </svg>
+    </div>
 
-<div id="chatbot-window">
-    <div id="chatbot-header">
-        <h3>AI Assistant</h3>
-        <button onclick="toggleChat()">✕</button>
+    <div id="chatbot-window">
+        <div id="chatbot-header">
+            <h3>AI Assistant</h3>
+            <button onclick="toggleChat()">✕</button>
+        </div>
+        <div id="chatbot-body" id="chat-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
     </div>
-    <div id="chatbot-body" id="chat-messages">
-        <!-- Messages will appear here -->
-    </div>
-    <div id="chatbot-input">
-        <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</div>
+
+    <script src="script.js"></script>
 </body>
 </html>

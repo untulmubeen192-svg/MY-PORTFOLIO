@@ -94,17 +94,10 @@ nav {
     z-index: 2;
 }
 
-/* Hierarchy Setup: 
-  1. PORTFOLIO (Largest - Green Color)
-  2. UNTUL MUBEEN (Large - White)
-  3. Role (Medium - Green)
-  4. Description (Bigger than before - Gray)
-*/
-
 .hero-portfolio-title {
-    font-size: clamp(3.5rem, 12vw, 9rem); /* Sabse bada text */
+    font-size: clamp(3.5rem, 12vw, 9rem); 
     font-weight: 900;
-    color: var(--accent-color); /* Wapas Green color diya hai */
+    color: var(--accent-color); 
     text-transform: uppercase;
     letter-spacing: 10px;
     line-height: 1;
@@ -113,7 +106,7 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: clamp(2.5rem, 7vw, 5rem); /* Doosra sabse bada */
+    font-size: clamp(2.5rem, 7vw, 5rem); 
     font-weight: 800;
     margin: 10px 0;
     letter-spacing: 2px;
@@ -123,7 +116,7 @@ nav {
 }
 
 .hero-role {
-    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Teesra sabse bada */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
     color: var(--accent-color);
     font-weight: 600;
     letter-spacing: 1px;
@@ -134,7 +127,7 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     color: var(--text-gray);
-    font-size: 1.25rem; /* Size bada kar diya hai (pehle 1rem tha) */
+    font-size: 1.25rem; 
     line-height: 1.8;
 }
 
@@ -164,24 +157,25 @@ section {
     text-align: center;
 }
 
-/* ----- HEADING STYLE BALANCED HERE ----- */
+/* ----- HEADING SIZE BALANCED & ENLARGED HERE ----- */
 .section-header span {
     color: var(--accent-color);
     display: block;
-    font-size: 2rem; 
+    font-size: 2.8rem; 
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .section-header h2 {
-    color: var(--text-gray); 
-    font-size: 1rem; 
-    font-weight: 400;
+    color: var(--text-white); 
+    font-size: 1.4rem; 
+    font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+/* ----------------------------------------------- */
 
 /* About Me (Page 2) */
 #about .about-content {
@@ -378,16 +372,16 @@ section {
 .uiux-text .sub-heading {
     color: var(--accent-color);
     display: block;
-    font-size: 1.8rem;
+    font-size: 2.2rem; 
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 8px;
 }
 
 .uiux-text .main-heading {
-    color: var(--text-gray);
-    font-size: 1rem;
-    font-weight: 400;
+    color: var(--text-white);
+    font-size: 1.2rem; 
+    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -521,17 +515,6 @@ footer .tagline {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links { display: none; } 
-    .hero-portfolio-title { letter-spacing: 4px; margin-bottom: -10px; }
-    .hero-content h1 { letter-spacing: 1px; }
-    .hero-content p { font-size: 1.1rem; } /* Mobile par bhi thoda bada */
-    .section-header span { font-size: 1.6rem; } 
-    .section-header h2 { font-size: 0.9rem; }
-    .uiux-text .sub-heading { font-size: 1.4rem; }
-    .uiux-content, #about .about-content { flex-direction: column; }
-}
 /* Chatbot Widget CSS */
 #chatbot-toggle {
     position: fixed;
@@ -645,4 +628,16 @@ footer .tagline {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links { display: none; } 
+    .hero-portfolio-title { letter-spacing: 4px; margin-bottom: -10px; }
+    .hero-content h1 { letter-spacing: 1px; }
+    .hero-content p { font-size: 1.1rem; } 
+    .section-header span { font-size: 2.2rem; } 
+    .section-header h2 { font-size: 1.1rem; } 
+    .uiux-text .sub-heading { font-size: 1.8rem; }
+    .uiux-content, #about .about-content { flex-direction: column; }
 }

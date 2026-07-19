@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 // Chatbot Logic
 function toggleChat() {
     const chatWindow = document.getElementById('chatbot-window');
@@ -103,7 +104,7 @@ function sendMessage() {
         if (triggerWhatsApp) {
             setTimeout(() => {
                 // APNA WHATSAPP NUMBER YAHAN LIKHEN (Country code ke sath, 92 ke sath)
-                const phoneNumber = "+923052949721"; 
+                const phoneNumber = "923052949721"; 
                 const message = encodeURIComponent("Hello Untul, I visited your portfolio. My query is: " + text);
                 window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
             }, 1500); // 1.5 second baad WhatsApp khulega
